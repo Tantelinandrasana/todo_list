@@ -1,0 +1,7 @@
+<h1>Lisitra Asa</h1>
+<a href="{{ path('task_new') }}">+ Asiana Asa Vaovao</a>
+<ul>
+    {% for task in tasks %}
+        <li>{{ task.title }} - {% if task.isDone %} Vita {% else %} Tsy vita {% endif %}</li>
+    {% endfor %}
+</ul>
